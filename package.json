@@ -10,7 +10,7 @@
     "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"test/**/*.spec.ts\""
   },
   "author": "Darian Sampare",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1"
