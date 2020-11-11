@@ -4,7 +4,8 @@
   "description": "template for TDD with typescript, express & node",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/app.ts",
+    "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"test/**/*.spec.ts\""
   },
   "author": "Darian Sampare",
   "license": "ISC",
