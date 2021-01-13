@@ -4,10 +4,10 @@
   "description": "template for TDD with typescript, express & node",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.js",
+    "start": "NODE_PATH=./dist node dist/app.js",
     "dev": "NODE_ENV=dev nodemon -r tsconfig-paths/register src/app.ts",
     "build": "tsc -p .",
-    "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"test/**/*.spec.ts\""
+    "test": "NODE_ENV=test mocha --check-leaks -r ts-node/register -r tsconfig-paths/register \"src/test/**/*.spec.ts\""
   },
   "author": "Darian Sampare",
   "license": "MIT",
